@@ -1,6 +1,6 @@
 //
 //  ToDo.swift
-//  ToDo
+//  ToDoList
 //
 //  Created by 김정호 on 3/19/24.
 //

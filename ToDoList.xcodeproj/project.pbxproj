@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37A63CC62BAAAE8100B8ED74 /* ToDoListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A63CC52BAAAE8100B8ED74 /* ToDoListManager.swift */; };
 		37E807512BA97CD40031C726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E807502BA97CD40031C726 /* AppDelegate.swift */; };
 		37E807532BA97CD40031C726 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E807522BA97CD40031C726 /* SceneDelegate.swift */; };
 		37E807552BA97CD40031C726 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E807542BA97CD40031C726 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37A63CC52BAAAE8100B8ED74 /* ToDoListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListManager.swift; sourceTree = "<group>"; };
 		37E8074D2BA97CD40031C726 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E807502BA97CD40031C726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37E807522BA97CD40031C726 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				37FFA5FA2BA981F900D19171 /* ToDo.swift */,
+				37A63CC52BAAAE8100B8ED74 /* ToDoListManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				37E807552BA97CD40031C726 /* ViewController.swift in Sources */,
 				37E807512BA97CD40031C726 /* AppDelegate.swift in Sources */,
 				37FFA5FB2BA981F900D19171 /* ToDo.swift in Sources */,
+				37A63CC62BAAAE8100B8ED74 /* ToDoListManager.swift in Sources */,
 				37E807532BA97CD40031C726 /* SceneDelegate.swift in Sources */,
 				37FFA5F82BA97FE600D19171 /* ToDoListTableViewCell.swift in Sources */,
 			);
