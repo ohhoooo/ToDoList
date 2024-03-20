@@ -28,4 +28,8 @@ final class ToDoListManager {
     func addToDo(toDo: ToDo) {
         toDoList.append(toDo)
     }
+    
+    func toggleIsCompleted(index: Int) {
+        toDoList[index].isCompleted = (toDoList[index].isCompleted) ? false : true
+    }
 }

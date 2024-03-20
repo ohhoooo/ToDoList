@@ -62,7 +62,11 @@ extension ViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath) as! ToDoListTableViewCell
+        
         cell.toDo = toDoListManager.datas[indexPath.row]
+        cell.toggleIsCompleted = { [weak self] in
+            self?.toDoListManager.toggleIsCompleted(index: indexPath.row)
+        }
         
         return cell
     }
