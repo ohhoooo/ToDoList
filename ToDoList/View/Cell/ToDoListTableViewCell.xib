@@ -19,8 +19,8 @@
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p41-7D-Bgp">
                         <rect key="frame" x="261" y="10" width="51" height="33"/>
                     </switch>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwJ-PX-28M">
-                        <rect key="frame" x="20" y="16" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwJ-PX-28M">
+                        <rect key="frame" x="20" y="16" width="221" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -30,8 +30,10 @@
                     <constraint firstItem="p41-7D-Bgp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="309-8L-Kru"/>
                     <constraint firstAttribute="trailing" secondItem="p41-7D-Bgp" secondAttribute="trailing" constant="10" id="SZ9-Ol-k34"/>
                     <constraint firstItem="BwJ-PX-28M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="TW5-pN-Uro"/>
+                    <constraint firstItem="p41-7D-Bgp" firstAttribute="leading" secondItem="BwJ-PX-28M" secondAttribute="trailing" constant="20" id="Z0G-Zs-qyk"/>
                     <constraint firstAttribute="bottom" secondItem="p41-7D-Bgp" secondAttribute="bottom" constant="10" id="n0k-Ej-2Y8"/>
                     <constraint firstItem="BwJ-PX-28M" firstAttribute="centerY" secondItem="p41-7D-Bgp" secondAttribute="centerY" id="t0Y-YZ-ZqI"/>
+                    <constraint firstItem="p41-7D-Bgp" firstAttribute="leading" secondItem="BwJ-PX-28M" secondAttribute="trailing" constant="20" id="vBk-tj-u1j"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
