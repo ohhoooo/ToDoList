@@ -10,7 +10,7 @@ import UIKit
 final class ViewController: UIViewController {
 
     // MARK: - properties
-    @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var editButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
     let toDoListManager = ToDoListManager()
@@ -20,6 +20,7 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         
         setTableView()
+        setNavigation()
     }
 
     private func setTableView() {
@@ -30,7 +31,21 @@ final class ViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: "ToDoCell")
     }
     
-    @IBAction func didTappedPlusButton(_ sender: UIButton) {
+    private func setNavigation() {
+        self.navigationController?.navigationBar.topItem?.title = "To Do"
+    }
+    
+    @IBAction func didTappedEditButton(_ sender: UIBarButtonItem) {
+        if tableView.isEditing {
+            editButton.title = "Edit"
+            tableView.setEditing(false, animated: true)
+        } else {
+            editButton.title = "Done"
+            tableView.setEditing(true, animated: true)
+        }
+    }
+    
+    @IBAction func didTappedPlusButton(_ sender: UIBarButtonItem) {
         let title = "할 일 추가"
         
         // alert
@@ -87,5 +102,10 @@ extension ViewController : UITableViewDelegate {
             toDoListManager.removeToDo(index: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+    
+    // Edit Mode에서의 특정 Cell 행 이동
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        toDoListManager.moveToDo(from: sourceIndexPath.row, to: destinationIndexPath.row)
     }
 }

@@ -36,4 +36,9 @@ final class ToDoListManager {
     func removeToDo(index: Int) {
         toDoList.remove(at: index)
     }
+    
+    func moveToDo(from: Int, to: Int) {
+        let element = toDoList.remove(at: from)
+        toDoList.insert(element, at: to)
+    }
 }
