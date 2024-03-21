@@ -32,4 +32,8 @@ final class ToDoListManager {
     func toggleIsCompleted(index: Int) {
         toDoList[index].isCompleted = (toDoList[index].isCompleted) ? false : true
     }
+    
+    func removeToDo(index: Int) {
+        toDoList.remove(at: index)
+    }
 }
