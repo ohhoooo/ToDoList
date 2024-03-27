@@ -18,6 +18,7 @@ final class ToDoListTableViewCell: UITableViewCell {
             if let toDo = toDo {
                 titleLabel.text = toDo.title
                 titleLabel.attributedText = (toDo.isCompleted) ? titleLabel.text?.strikeThrough() : titleLabel.text?.removeStrikethrough()
+                isCompletedSwitch.isOn = toDo.isCompleted
             }
         }
     }

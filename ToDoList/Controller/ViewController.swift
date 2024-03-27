@@ -57,7 +57,7 @@ final class ViewController: UIViewController {
             if let textField = alert.textFields?.first {
                 if textField.text?.isEmpty != true {
                     toDoListManager.addToDo(toDo: ToDo(title: textField.text!))
-                    tableView.reloadData()
+                    tableView.insertRows(at: [IndexPath(row: toDoListManager.count-1, section: 0)], with: .automatic)
                 }
             }
         }
